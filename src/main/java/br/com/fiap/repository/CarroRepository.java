@@ -19,7 +19,7 @@ public class CarroRepository {
 	
 	private CarroRepository() {
 		carros = new HashMap<Long, CarroModel>();
-		carros.put(1L, new CarroModel(1L, "Volkswagen", "Golf", 2018, "1.4 TSI", "Flex", "Automatico", "12,6 km/l (G) 8,4 km/l (A)", 103800.00, "Modelo topo de linha, todos os opcionais disponíveis. Ar-condicionado, teto solar panorâmico, bancos com regulagem elétrica, direção elétrica, central multimídia, volante em couro com comandos de som, painel digital. Motor 1.4 turbo (150cv) e câmbio automático convencional de 6 velocidades, faróis full LED, rodas aro 17”."));
+		carros.put(1L, new CarroModel(1L, "Volks", "Golf", 2018, "1.4 TSI", "Flex", "Automatico", "12,6 km/l (G) 8,4 km/l (A)", 103800.00, "Modelo topo de linha, todos os opcionais disponíveis. Ar-condicionado, teto solar panorâmico, bancos com regulagem elétrica, direção elétrica, central multimídia, volante em couro com comandos de som, painel digital. Motor 1.4 turbo (150cv) e câmbio automático convencional de 6 velocidades, faróis full LED, rodas aro 17”."));
 		carros.put(2L, new CarroModel(2L, "Volkswagen", "Polo", 2020, "1.0 TSI", "Flex", "Automatico", "12,6 km/l (G) 8,7 km/l (A)", 77000.00, "Veículo muito completo, opcionais do modelo: Rodas aro 17” e sistema de som Beats Audio. Ar-condicionado digital, motor 1.0 turbo (128cv), transmissão automática de 6 velocidades, direção elétrica, central multimídia, volante em couro com comandos de som, painel digital, bancos em couro, volante revestido em couro, 4 portas."));
 		carros.put(3L, new CarroModel(3L, "Honda", "Civic", 2020, "1.5 Turbo", "Gasolina", "Automatico (CVT)", "13,1 km/l (G) ", 134900.00, "Veículo topo de linha, Bancos e volante em couro, Ar-condicionado dual-zone, teto solar, regulagem elétrica dos bancos e retrovisores externos, Faróis em LED com acendimento automático, freio de estacionamento elétrico, acionamento remoto do motor, motorização 1.5 turbo (173cv) e transmissão automática CVT."));
 		carros.put(4L, new CarroModel(4L, "BMW", "320i Sport", 2020, "2.0 Turbo", "Gasolina", "Automatico", "11,8 km/l (G) ", 195950.00, "Veículo premium lançamento. Bancos esportivos e volante (com paddle shifts) em couro, Ar-condicionado dual-zone digital, regulagem elétrica dos bancos e retrovisores externos com memória, Faróis em LED com acendimento automático, freio de estacionamento elétrico, acionamento remoto do motor, motorização 2.0 turbo injeção direta (184cv) e transmissão automática de 8 velocidades."));
@@ -47,7 +47,7 @@ public class CarroRepository {
 	
 	public void deleteById(long id) {
 		carros.remove(id);
-		carros.size() = carros.size() - 1;
+		
 	}
 	
 }
